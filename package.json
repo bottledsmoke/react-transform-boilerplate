@@ -1,7 +1,7 @@
 {
   "name": "react-transform-boilerplate",
   "version": "1.0.0",
-  "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
+  "description": "A fork of gaearon/react-transform-boilerplate with my boilerplate tacked on.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
+    "url": "https://github.com/bottledsmoke/react-transform-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -26,29 +26,40 @@
     "babel",
     "react-transform"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Tyler Hellner (http://github.com/bottledsmoke)",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
+    "url": "https://github.com/bottledsmoke/react-transform-boilerplate/issues"
   },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
+  "homepage": "https://github.com/bottledsmoke/react-transform-boilerplate",
   "devDependencies": {
+    "autoprefixer": "^6.0.3",
     "babel-core": "^5.4.7",
-    "babel-eslint": "^3.1.9",
+    "babel-eslint": "^4.1.3",
     "babel-loader": "^5.1.2",
-    "babel-plugin-react-transform": "^1.1.1",
+    "babel-plugin-react-transform": "^1.1.0",
+    "css-loader": "^0.19.0",
     "eslint": "^1.3.1",
-    "eslint-plugin-react": "^2.3.0",
+    "eslint-plugin-react": "^3.4.2",
     "express": "^4.13.3",
+    "lost": "^6.6.1",
+    "postcss-loader": "^0.6.0",
+    "postcss-simple-vars": "^1.0.1",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
+    "redux-devtools": "^2.1.2",
     "rimraf": "^2.4.3",
+    "style-loader": "^0.12.4",
     "webpack": "^1.9.6",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "react": "^0.13.0"
+    "react": "^0.13.3",
+    "react-redux": "^2.1.2",
+    "react-router": "^1.0.0-rc1",
+    "redux": "^3.0.0",
+    "redux-thunk": "^1.0.0"
   }
 }
