@@ -1,23 +1,34 @@
 React Transform Boilerplate
 =====================
 
-A *new* Webpack boilerplate with:
+A form of Dan Abramov's React Transform Boilerplate with the following functionality:
 
 * hot reloading React components;
 * error handling inside component `render()` function;
 * error handling for syntax errors (thanks, **[@glenjamin](https://github.com/glenjamin)**!)
+* PostCSS compilation including
+* * SimpleVars
+* * AutoPrefixer
+* * Lost - a PostCSS grid system
+* Karma unit tests backed by Mocha that are run automatically by Webpack.
+* esLint configured with eslint-plugin-react.
+* Redux (with the following middleware)
+* * Redux-Logger
+* * Redux-Thunk (for async api calls)
+* Redux DevTools
+* React Router
 
-Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.  
+Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.
 **[Does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
 
 [![react-transform channel on slack](https://img.shields.io/badge/slack-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)
 
 ## Demo
 
-![](http://i.imgur.com/AhGY28T.gif)
+<!-- ![](http://i.imgur.com/AhGY28T.gif) -->
 
 ```
-git clone https://github.com/gaearon/react-transform-boilerplate.git
+git clone https://github.com/bottledsmoke/react-transform-boilerplate.git
 cd react-transform-boilerplate
 npm install
 npm start

@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// import HelloWorld from "../components/helloWorld";
 
-export default class App extends Component {
+
+class App extends Component {
   render() {
-    return <h1>Hello World!</h1>;
+    const { hello } = this.props;
+    return (
+      <h1>{hello.text}</h1>
+    );
   }
 }
+
+function stateToProps(state) {
+  return {
+    hello: state.hello
+  };
+}
+
+export default connect(stateToProps)(App);
