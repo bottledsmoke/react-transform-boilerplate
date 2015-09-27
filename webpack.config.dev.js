@@ -31,7 +31,10 @@ module.exports = {
       {
         test: /\.css$/,
         loaders: ['style', 'css', 'postcss'],
-        include: path.resolve(ROOT_PATH, 'src')
+        include: [
+          path.resolve(ROOT_PATH, 'src'),
+          path.resolve(ROOT_PATH, 'node_modules/normalize.css')
+        ]
       }
     ]
   },

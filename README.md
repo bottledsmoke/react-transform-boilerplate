@@ -10,7 +10,7 @@ A fork of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon
 
 ### PostCSS
 * [PostCSS](https://github.com/postcss/postcss) compilation including
-  * [SimpleVars](https://github.com/postcss/postcss-simple-vars)
+  * [SimpleVars](https://github.com/postcss/postcss-simple-vars) - Automatically injects variables. Comes pre-packed with FlatUI color palette.
   * [AutoPrefixer](https://github.com/postcss/autoprefixer)
   * [Lost](https://github.com/corysimmons/lost) - a PostCSS grid system
 
@@ -32,7 +32,7 @@ Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plu
 
 ## Installation
 
-For a fresh install
+For a fresh install...
 
 ```
 git clone https://github.com/bottledsmoke/react-transform-boilerplate.git
