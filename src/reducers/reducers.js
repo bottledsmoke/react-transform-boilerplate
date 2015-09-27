@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
 import { SAY_HELLO } from '../actions/actions';
 
-function hello(state = {text: 'Hello World'}, action) {
+const initialState = {
+  text: 'Hello World'
+};
+
+function greeting(state = initialState, action) {
   switch (action.type) {
     case SAY_HELLO:
       return {
@@ -13,7 +17,7 @@ function hello(state = {text: 'Hello World'}, action) {
 }
 
 const rootReducer = combineReducers({
-  hello
+  greeting
 });
 
 export default rootReducer;

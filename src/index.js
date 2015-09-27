@@ -13,10 +13,11 @@ const store = configureStore();
 React.render(
   <div>
     <Provider store={store}>
-      {() =>
-      <Router history={history}>
-        <Route path='/' component={App}/>
-      </Router>
+      {
+        () =>
+          <Router history={history}>
+            <Route path='/' component={App}/>
+          </Router>
       }
     </Provider>
     <DebugPanel top right bottom>

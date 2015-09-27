@@ -9,6 +9,8 @@ const TestUtils = React.addons.TestUtils;
 describe('App', function () {
   it('Says Hello!', function () {
     const hello = TestUtils.renderIntoDocument(
+      // Note: creating the store and rendering into Provider is a big
+      //       performance killer. Consider stubbing it out.
       <Provider store={configureStore()}>
         {() => <App/>}
       </Provider>);

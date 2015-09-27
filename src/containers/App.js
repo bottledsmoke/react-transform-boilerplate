@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import HelloWorld from "../components/helloWorld";
+import { sayHello } from '../actions/actions';
+import HelloWorld from '../components/helloWorld';
 
 
 class App extends Component {
   render() {
-    const { hello } = this.props;
+    const { dispatch, hello } = this.props;
     return (
-      <h1>{hello.text}</h1>
+      <HelloWorld text={ hello }
+                  onSayHello={ text =>
+                    dispatch(sayHello(text)) }/>
     );
   }
 }
 
 function stateToProps(state) {
   return {
-    hello: state.hello
+    hello: state.greeting.text
   };
 }
 

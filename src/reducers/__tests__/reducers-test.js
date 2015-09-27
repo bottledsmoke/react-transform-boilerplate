@@ -7,7 +7,7 @@ describe('Reducer', () => {
     expect(
       reducer(undefined, {})
     ).toEqual({
-      hello: { text: 'Hello World' }
+      greeting: { text: 'Hello World' }
     });
   });
   it('Should handle sayHello', () => {
@@ -19,7 +19,7 @@ describe('Reducer', () => {
         }
       })
     ).toEqual({
-      hello: {
+      greeting: {
         text: 'Hi!'
       }
     });

@@ -1,41 +1,57 @@
 React Transform Boilerplate
 =====================
 
-A form of Dan Abramov's React Transform Boilerplate with the following functionality:
+A fork of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) with the following functionality:
 
+### Original Boilerplate:
 * hot reloading React components;
 * error handling inside component `render()` function;
 * error handling for syntax errors (thanks, **[@glenjamin](https://github.com/glenjamin)**!)
-* PostCSS compilation including
-* * SimpleVars
-* * AutoPrefixer
-* * Lost - a PostCSS grid system
-* Karma unit tests backed by Mocha that are run automatically by Webpack.
-* esLint configured with eslint-plugin-react.
-* Redux (with the following middleware)
-* * Redux-Logger
-* * Redux-Thunk (for async api calls)
-* Redux DevTools
-* React Router
+
+### PostCSS
+* **[PostCSS](https://github.com/postcss/postcss) compilation including
+* * [SimpleVars](https://github.com/postcss/postcss-simple-vars)
+* * [AutoPrefixer](https://github.com/postcss/autoprefixer)
+* * [Lost](https://github.com/corysimmons/lost) - a PostCSS grid system
+
+### Testing + Linting
+* [Karma](http://karma-runner.github.io/0.13/index.html) unit tests backed by [Mocha](https://mochajs.org/) that are run automatically by Webpack using [Karma-Webpack](https://github.com/webpack/karma-webpack).
+* [esLint](http://eslint.org/) configured with [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
+
+### Redux + Routing
+* [Redux](https://github.com/rackt/redux) + [React-Redux](https://github.com/rackt/react-redux) (with the following middleware)
+* * [Redux-Logger](https://github.com/fcomb/redux-logger)
+* * [Redux-Thunk](https://github.com/gaearon/redux-thunk) (for async api calls)
+* [Redux DevTools](https://github.com/gaearon/redux-devtools)
+* [React Router](https://github.com/rackt/react-router)
 
 Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.
 **[Does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
 
 [![react-transform channel on slack](https://img.shields.io/badge/slack-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)
 
-## Demo
 
-<!-- ![](http://i.imgur.com/AhGY28T.gif) -->
+## Installation
+
+For a fresh install
 
 ```
 git clone https://github.com/bottledsmoke/react-transform-boilerplate.git
 cd react-transform-boilerplate
+git rm -rf .git  # Deletes the git repo (do not do this if you are making a pull request)
+git init         # Creates a fresh repo (do not do this if you are making a pull request)
 npm install
 npm start
 open http://localhost:3000
 ```
 
-Then go ahead and edit files inside `src` (any file except `index.js`).
+From there, edit the package.json and replace my info with yours, and your app is good to go!
+
+Thanks again to Dan and the rest of the Redux + Rackt fellowship for the wonderful boilerplate.
+
+
+# Original Documentation
+---
 
 ## What’s Inside
 
