@@ -9,10 +9,10 @@ A fork of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon
 * error handling for syntax errors (thanks, **[@glenjamin](https://github.com/glenjamin)**!)
 
 ### PostCSS
-* **[PostCSS](https://github.com/postcss/postcss) compilation including
-* * [SimpleVars](https://github.com/postcss/postcss-simple-vars)
-* * [AutoPrefixer](https://github.com/postcss/autoprefixer)
-* * [Lost](https://github.com/corysimmons/lost) - a PostCSS grid system
+* [PostCSS](https://github.com/postcss/postcss) compilation including
+  * [SimpleVars](https://github.com/postcss/postcss-simple-vars)
+  * [AutoPrefixer](https://github.com/postcss/autoprefixer)
+  * [Lost](https://github.com/corysimmons/lost) - a PostCSS grid system
 
 ### Testing + Linting
 * [Karma](http://karma-runner.github.io/0.13/index.html) unit tests backed by [Mocha](https://mochajs.org/) that are run automatically by Webpack using [Karma-Webpack](https://github.com/webpack/karma-webpack).
@@ -20,15 +20,14 @@ A fork of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon
 
 ### Redux + Routing
 * [Redux](https://github.com/rackt/redux) + [React-Redux](https://github.com/rackt/react-redux) (with the following middleware)
-* * [Redux-Logger](https://github.com/fcomb/redux-logger)
-* * [Redux-Thunk](https://github.com/gaearon/redux-thunk) (for async api calls)
+  * [Redux-Logger](https://github.com/fcomb/redux-logger)
+  * [Redux-Thunk](https://github.com/gaearon/redux-thunk) (for async api calls)
 * [Redux DevTools](https://github.com/gaearon/redux-devtools)
 * [React Router](https://github.com/rackt/react-router)
 
+
 Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.
 **[Does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
-
-[![react-transform channel on slack](https://img.shields.io/badge/slack-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)
 
 
 ## Installation
@@ -51,7 +50,6 @@ Thanks again to Dan and the rest of the Redux + Rackt fellowship for the wonderf
 
 
 # Original Documentation
----
 
 ## What’s Inside
 
