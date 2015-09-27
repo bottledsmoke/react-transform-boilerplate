@@ -35,7 +35,7 @@ Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plu
 For a fresh install...
 
 ```
-git clone https://github.com/bottledsmoke/react-transform-boilerplate.git
+git clone -b my_boilerplate git@github.com:bottledsmoke/react-transform-boilerplate.git
 cd react-transform-boilerplate
 rm -rf .git   # Deletes the git repo (do not do this if you are making a pull request)
 git init      # Creates a fresh repo (do not do this if you are making a pull request)
