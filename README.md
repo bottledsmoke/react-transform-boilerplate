@@ -15,7 +15,7 @@ A fork of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon
   * [Lost](https://github.com/corysimmons/lost) - a PostCSS grid system
 
 ### Testing + Linting
-* [Karma](http://karma-runner.github.io/0.13/index.html) unit tests backed by [Mocha](https://mochajs.org/) that are run automatically by Webpack using [Karma-Webpack](https://github.com/webpack/karma-webpack).
+* [Karma](http://karma-runner.github.io/0.13/index.html) unit tests backed by [Mocha](https://mochajs.org/) that are run automatically via [Karma-Webpack](https://github.com/webpack/karma-webpack).
 * [esLint](http://eslint.org/) configured with [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
 
 ### Redux + Routing
@@ -37,8 +37,8 @@ For a fresh install
 ```
 git clone https://github.com/bottledsmoke/react-transform-boilerplate.git
 cd react-transform-boilerplate
-git rm -rf .git  # Deletes the git repo (do not do this if you are making a pull request)
-git init         # Creates a fresh repo (do not do this if you are making a pull request)
+rm -rf .git   # Deletes the git repo (do not do this if you are making a pull request)
+git init      # Creates a fresh repo (do not do this if you are making a pull request)
 npm install
 npm start
 open http://localhost:3000
